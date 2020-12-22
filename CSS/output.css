@@ -13,6 +13,7 @@ button {
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
+  margin-bottom: 50px;
   border: 2px dashed gold;
   width: 150px;
   height: 35px;
@@ -33,7 +34,7 @@ button {
   background-color: darkcyan;
   width: 30px;
   height: 30px;
-  padding: 5px;
+  margin: 5px;
   text-align: center;
   line-height: 30px;
 }
@@ -42,10 +43,9 @@ button {
   background-color: gold;
   width: 30px;
   height: 30px;
-  padding: 5px;
+  margin: 5px;
   text-align: center;
   line-height: 30px;
-  flex-grow: 1.5;
   border-radius: 50%;
 }
 
