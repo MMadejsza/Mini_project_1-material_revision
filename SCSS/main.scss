@@ -31,12 +31,13 @@ button {
 }
 
 .squareDiv {
-    color: $squareColor;
+    background-color: $squareColor;
     @include appendedDivs;
 }
 
 .roundedDiv {
-    color: $roundedColor;
+    background-color: $roundedColor;
     @include appendedDivs;
     flex-grow: 1.5;
+    border-radius: 50%;
 }
