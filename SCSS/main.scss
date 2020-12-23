@@ -44,12 +44,20 @@ button {
         border-radius: 50%;
     }
 
+}
+
+.container2 {
+    @include centerDiv;
+    width: $containers-width;
+
     ul {
         display: flex;
         flex-flow: column wrap;
-        justify-content: space-evenly;
-        align-content: flex-start;
+        justify-content: center;
+        // align-content: flex-start;
         list-style-type: none;
+        text-align: center;
+
     }
 
     .secondLi {
@@ -57,9 +65,4 @@ button {
         font-style: italic;
         font-size: 1.3rem;
     }
-}
-
-.container2 {
-    display: inline-block;
-    width: $containers-width;
 }

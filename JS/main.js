@@ -22,8 +22,8 @@ function recordAdding() {
     const container2 = document.querySelector(".container2");
     let unorderedList = createTag("ul", "class", "");
     let listElement = createTag("li", "class", "");
-    listElement.textContent = number;
-    if (number % 2 == 0) {
+    listElement.textContent = number2;
+    if (number2 % 2 == 0) {
         listElement.setAttribute("class", "secondLi");
     }
     number2++;
