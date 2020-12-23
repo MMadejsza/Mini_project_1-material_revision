@@ -29,16 +29,32 @@ button {
     flex-flow: row wrap;
     justify-content: space-evenly;
     align-content: center;
-}
+    @include centerDiv;
+    width: 70%;
 
-.squareDiv {
-    background-color: $squareColor;
-    @include appendedDivs;
-}
+    .squareDiv {
+        background-color: $squareColor;
+        @include appendedDivs;
+    }
 
-.roundedDiv {
-    background-color: $roundedColor;
-    @include appendedDivs;
-    // flex-grow: 1.5;
-    border-radius: 50%;
+    .roundedDiv {
+        background-color: $roundedColor;
+        @include appendedDivs;
+        // flex-grow: 1.5;
+        border-radius: 50%;
+    }
+
+    ul {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-evenly;
+        align-content: flex-start;
+        list-style-type: none;
+    }
+
+    .secondLi {
+        font-weight: bold;
+        font-style: italic;
+        font-size: 1.3rem;
+    }
 }

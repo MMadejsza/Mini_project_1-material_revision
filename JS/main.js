@@ -7,7 +7,7 @@ function divAdding() {
     const container = document.querySelector(".container");
     let div1 = createTag("div", "class", "squareDiv");
     div1.textContent = number;
-    if (div1.textContent % 5 == 0) {
+    if (number % 5 == 0) {
         div1.setAttribute("class", "roundedDiv");
     }
     number++;
