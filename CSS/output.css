@@ -62,4 +62,9 @@ button {
   font-size: 1.3rem;
 }
 
+.container2 {
+  display: inline-block;
+  width: 70%;
+}
+
 /*# sourceMappingURL=output.css.map */
