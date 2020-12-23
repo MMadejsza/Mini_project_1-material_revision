@@ -15,18 +15,20 @@ function divAdding() {
 
 const addRecord = document.querySelector(".list");
 addRecord.addEventListener("click", recordAdding)
-let number2 = 1;
+let number3 = 1;
+let number4 = 1;
 
 function recordAdding() {
     console.log('click');
     const container2 = document.querySelector(".container2");
     let unorderedList = createTag("ul", "class", "");
     let listElement = createTag("li", "class", "");
-    listElement.textContent = number2;
-    if (number2 % 2 == 0) {
+    listElement.textContent = number4;
+    if (number3 % 2 == 0) {
         listElement.setAttribute("class", "secondLi");
     }
-    number2++;
+    number3++;
+    number4 += 2;
     unorderedList.appendChild(listElement);
     container2.appendChild(unorderedList);
 }
