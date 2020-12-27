@@ -68,4 +68,14 @@ button {
   font-size: 1.3rem;
 }
 
+.scroll {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 /*# sourceMappingURL=output.css.map */
