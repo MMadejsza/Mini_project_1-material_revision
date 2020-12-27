@@ -43,22 +43,23 @@ function createTag(tag, attribute, value) {
 
 const squere = createTag("div", "class", "scroll");
 document.body.appendChild(squere);
-let size = 10;
-squere.style.width = size + "px";
-squere.style.height = size + "px";
-
-
 window.addEventListener("scroll", sizeChange);
+let size = 10;
 let flag = true;
+asignSizes();
+
+function asignSizes() {
+    squere.style.width = size + "px";
+    squere.style.height = size + "px";
+}
+
 function sizeChange() {
     if (flag == true) {
         size += 10;
-        squere.style.width = size + "px";
-        squere.style.height = size + "px";
+        asignSizes();
     } else {
         size -= 10;
-        squere.style.width = size + "px";
-        squere.style.height = size + "px";
+        asignSizes();
     }
 
     if (size >= window.innerWidth / 2) {
