@@ -41,30 +41,31 @@ function createTag(tag, attribute, value) {
 
 //Squere Task
 
-const squere = createTag("div", "class", "scroll");
-document.body.appendChild(squere);
+const square = createTag("div", "class", "scroll");
+document.body.appendChild(square);
 window.addEventListener("scroll", sizeChange);
 let size = 10;
 let flag = true;
-asignSizes();
+assignSizes();
 
-function asignSizes() {
-    squere.style.width = size + "px";
-    squere.style.height = size + "px";
+function assignSizes() {
+    square.style.width = size + "px";
+    square.style.height = size + "px";
 }
 
 function sizeChange() {
-    if (flag == true) {
+    if (flag) {
         size += 10;
-        asignSizes();
+        assignSizes();
     } else {
         size -= 10;
-        asignSizes();
+        assignSizes();
     }
 
     if (size >= window.innerWidth / 2) {
-        flag = false;
+        flag = !flag;
     } else if (size <= 0) {
-        flag = true;
+        flag = !flag;
+
     }
 }
