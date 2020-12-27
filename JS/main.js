@@ -39,6 +39,13 @@ function createTag(tag, attribute, value) {
     return element
 }
 
+//Squere Task
 
 const squere = createTag("div", "class", "scroll");
 document.body.appendChild(squere);
+let size = "10";
+squere.style.width = size + "px";
+squere.style.height = size + "px";
+
+
+window.addEventListener("scroll")
