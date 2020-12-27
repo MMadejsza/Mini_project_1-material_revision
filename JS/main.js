@@ -38,3 +38,7 @@ function createTag(tag, attribute, value) {
     element.setAttribute(attribute, value);
     return element
 }
+
+
+const squere = createTag("div", "class", "scroll");
+document.body.appendChild(squere);
